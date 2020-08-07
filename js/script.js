@@ -31,10 +31,10 @@ function() {
 );
 
 // tasto annulla
-// var annulla = document.getElementById("annulla");
-//
-// annulla.addEventListener("click",
-// function() {
-// document.getElementById('')
-// }
-// );
+var annulla = document.getElementById("annulla");
+annulla.addEventListener("click",
+function() {
+  var display = document.getElementById("none");
+  display.classList.remove("block");
+}
+);
