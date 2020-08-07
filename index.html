@@ -5,11 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
 <body>
+  <div class="container">
+    <h1>Calcola il prezzo del tuo biglietto</h1>
+    <div class="form-container">
+      <div class="dati-input">
+        <div class="row">
+          <div class="col">
+            <label for="nome">Nome e Cognome</label>
+            <input id="nome" type="text" placeholder="Inserisci il tuo nome">
+          </div>
+          <div class="col">
+            <label for="km">Km da percorrere</label>
+            <input id="km" type="number" min="1" placeholder="Inserisci i kilometri">
+          </div>
+          <div class="col">
+            <label for="fascia">Fascia d'et&agrave;</label>
+            <select id="fascia">
+              <option value="minorenne">Minorenne</option>
+              <option value="maggiorenne">Maggiorenne</option>
+              <option value="over65">Over 65</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <button type="button" id="genera" class="btn" name="genera">Genera</button>
+          <button type="button" id="annulla" class="btn" name="annulla">Annulla</button>
+        </div>
+      </div>
+    </div>
+    
+  </div>
   <script type="text/javascript" src="js/script.js">
-
   </script>
 </body>
 </html>
