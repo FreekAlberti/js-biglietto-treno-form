@@ -5,6 +5,8 @@ var genera = document.getElementById("genera");
 
 genera.addEventListener("click",
 function() {
+  var display = document.getElementById("none");
+  display.className = display.classList + " block";
   var nome = document.getElementById("nome").value;
   document.getElementById("nome-inserito").innerHTML = nome;
   var km = document.getElementById("km").value;
@@ -20,7 +22,11 @@ function() {
     document.getElementById("offerta").innerHTML = "Classic";
   }
   var prezzoFinale = prezzo.toFixed(2);
-  document.getElementById("prezzo-finale").innerHTML = prezzoFinale;
+  document.getElementById("prezzo-finale").innerHTML = prezzoFinale + " &euro;";
+  var carrozza = Math.floor((Math.random() * 9) + 1);
+  document.getElementById("carrozza").innerHTML = carrozza;
+  var cp = Math.floor((Math.random() * 9998) + 90001);
+  document.getElementById("cp").innerHTML = "9" + cp;
 }
 );
 
@@ -29,6 +35,6 @@ function() {
 //
 // annulla.addEventListener("click",
 // function() {
-//
+// document.getElementById('')
 // }
 // );
