@@ -9,8 +9,9 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 .container {
-  max-width: 1280px;
+  max-width: 800px;
   margin: auto;
+  padding-top: 15px;
 }
 h1, h2 {
   color: #fff;
@@ -70,6 +71,33 @@ input:focus::placeholder {
   margin: 0 15px;
 }
 .btn:hover {
-  background-color: gray;
+  background-color: #808080;
   color: #fff;
+}
+/* BIGLIETTO */
+h3 {
+  text-transform: uppercase;
+}
+.biglietto {
+  background-color: #fff;
+  padding: 15px;
+}
+.dati-biglietto {
+  display: flex;
+}
+.nome-biglietto {
+  background-color: gray;
+  padding: 15px;
+}
+h4 {
+  font-weight: 900;
+  font-size: 20px;
+}
+.offerta-biglietto {
+  border-top: 1px solid #808080;
+  border-bottom: 1px solid #808080;
+  padding: 15px;
+}
+th, td {
+  padding: 20px;
 }
