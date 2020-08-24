@@ -23,9 +23,9 @@ function() {
   }
   var prezzoFinale = prezzo.toFixed(2);
   document.getElementById("prezzo-finale").innerHTML = prezzoFinale + " &euro;";
-  var carrozza = Math.floor((Math.random() * 9) + 1);
+  var carrozza = Math.floor(Math.random() * 10);
   document.getElementById("carrozza").innerHTML = carrozza;
-  var cp = Math.floor((Math.random() * 9998) + 90001);
+  var cp = Math.floor((Math.random() * 10000) + 90000);
   document.getElementById("cp").innerHTML = "9" + cp;
 }
 );
@@ -36,5 +36,8 @@ annulla.addEventListener("click",
 function() {
   var display = document.getElementById("none");
   display.classList.remove("block");
+  document.getElementById("nome").value = "";
+  document.getElementById("fascia").value = "";
+  document.getElementById("km").value = "";
 }
 );
